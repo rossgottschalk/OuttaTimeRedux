@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B99A54C1D6259C6008A7303 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B99A54B1D6259C6008A7303 /* DatePickerViewController.swift */; };
 		5BAE08BA1D62371700F9BEEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAE08B91D62371700F9BEEE /* AppDelegate.swift */; };
 		5BAE08BC1D62371700F9BEEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAE08BB1D62371700F9BEEE /* ViewController.swift */; };
 		5BAE08BF1D62371700F9BEEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BAE08BD1D62371700F9BEEE /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B99A54B1D6259C6008A7303 /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		5B99A54D1D625D8A008A7303 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 		5BAE08B61D62371700F9BEEE /* OuttaTimeRedux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OuttaTimeRedux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BAE08B91D62371700F9BEEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BAE08BB1D62371700F9BEEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,10 +59,12 @@
 			children = (
 				5BAE08B91D62371700F9BEEE /* AppDelegate.swift */,
 				5BAE08BB1D62371700F9BEEE /* ViewController.swift */,
+				5B99A54B1D6259C6008A7303 /* DatePickerViewController.swift */,
 				5BAE08BD1D62371700F9BEEE /* Main.storyboard */,
 				5BAE08C01D62371700F9BEEE /* Assets.xcassets */,
 				5BAE08C21D62371700F9BEEE /* LaunchScreen.storyboard */,
 				5BAE08C51D62371700F9BEEE /* Info.plist */,
+				5B99A54D1D625D8A008A7303 /* digital-7.ttf */,
 			);
 			path = OuttaTimeRedux;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 			files = (
 				5BAE08BC1D62371700F9BEEE /* ViewController.swift in Sources */,
 				5BAE08BA1D62371700F9BEEE /* AppDelegate.swift in Sources */,
+				5B99A54C1D6259C6008A7303 /* DatePickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +292,7 @@
 				5BAE08CA1D62371700F9BEEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

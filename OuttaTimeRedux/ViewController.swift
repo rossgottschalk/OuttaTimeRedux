@@ -6,18 +6,41 @@
 //  Copyright © 2016 The Iron Yard. All rights reserved.
 //
 
+
+//In Objective-C:
+//
+//@protocol DetailViewControllerProtocol <NSObject>
+//- (void)didFinishTask:(DetailViewController *)sender;
+//@end
+//The Swift code is similar:
+//
+//protocol DetailViewControllerDelegate: class {
+//    func didFinishTask(sender: DetailViewController)
+//}
+
 import UIKit
 
-class ViewController: UIViewController {
+protocol DateDelegate: class
+{
+    func dateChosen(sender: DatePickerViewController)
+}
 
-    override func viewDidLoad() {
+
+class ViewController: UIViewController {
+    @IBOutlet weak var destinationLabel: UILabel!
+    @IBOutlet weak var presentLabel: UILabel!
+    @IBOutlet weak var lastLabel: UILabel!
+    @IBOutlet weak var speedLabel: UILabel!
+
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        title = "Outta Time"
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 
