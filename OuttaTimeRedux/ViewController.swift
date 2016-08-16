@@ -20,29 +20,57 @@
 
 import UIKit
 
-protocol DateDelegate: class
+//protocol DateDelegate: class
+//{
+//    func dateChosen(sender: DatePickerViewController)
+//}
+
+
+class ViewController: UIViewController
 {
-    func dateChosen(sender: DatePickerViewController)
-}
-
-
-class ViewController: UIViewController {
     @IBOutlet weak var destinationLabel: UILabel!
     @IBOutlet weak var presentLabel: UILabel!
     @IBOutlet weak var lastLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
 
+    let dateFormat = NSDateFormatter()
+    
+    
+    
+    @IBAction func selectDateTapped(sender: UIBarButtonItem)
+    
+    {
+        self.performSegueWithIdentifier("dateSegue", sender: nil)
+    }
+    
+  
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
         title = "Outta Time"
         
+       
+        dateFormat.dateStyle = .MediumStyle
+        let todaysDate = NSDate ()
+        presentLabel.text = dateFormat.stringFromDate(todaysDate)
+        
+        
+        destinationLabel.text = "?????"
+        
+        
+        speedLabel.text = "61mph"
+        
     }
 
-    override func didReceiveMemoryWarning() {
+    
+    override func didReceiveMemoryWarning()
+    
+    {
         super.didReceiveMemoryWarning()
     }
 
-
+    
+    
 }
 
