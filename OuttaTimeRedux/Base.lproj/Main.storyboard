@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VUJ-4B-kQZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -26,62 +26,79 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRESENT TIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4J-Kt-Puy">
-                                <rect key="frame" x="242" y="158" width="116" height="23"/>
+                                <rect key="frame" x="242" y="114" width="116" height="23"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Present Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aL9-s5-6Q7">
-                                <rect key="frame" x="237" y="189" width="127" height="23"/>
+                                <rect key="frame" x="237" y="145" width="127" height="23"/>
                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
                                 <color key="textColor" red="0.34223482500000002" green="1" blue="0.1046207507" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST TIME DEPARTED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHd-Ls-dVs">
-                                <rect key="frame" x="214" y="232" width="172" height="23"/>
+                                <rect key="frame" x="214" y="188" width="172" height="23"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Time Departed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSJ-KN-7TN">
-                                <rect key="frame" x="204" y="263" width="193" height="23"/>
-                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
-                                <color key="textColor" red="1" green="0.64677772879999995" blue="0.030041765710000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPEED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eQ-Bc-diL">
-                                <rect key="frame" x="275" y="306" width="51" height="23"/>
+                                <rect key="frame" x="275" y="262" width="51" height="23"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed MPH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZ3-1g-4as">
-                                <rect key="frame" x="250" y="337" width="100" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- MPH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZ3-1g-4as">
+                                <rect key="frame" x="269" y="293" width="63" height="23"/>
                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
                                 <color key="textColor" red="0.98431372549999996" green="0.12560814419999999" blue="0.043175888410000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESTINATION TIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwM-Fi-yj0">
-                                <rect key="frame" x="221" y="84" width="159" height="23"/>
+                                <rect key="frame" x="221" y="40" width="159" height="23"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbD-AV-DZT">
-                                <rect key="frame" x="220" y="115" width="160" height="23"/>
+                                <rect key="frame" x="220" y="71" width="160" height="23"/>
                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
                                 <color key="textColor" red="1" green="0.066152303770000004" blue="0.024785690780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJj-my-Mhl">
+                                <rect key="frame" x="260" y="352" width="80" height="30"/>
+                                <state key="normal" title="Select Date"/>
+                                <connections>
+                                    <segue destination="mjS-G2-SDd" kind="presentation" identifier="datePickerSegue" id="e5r-bh-b4D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1s-H6-zRL">
+                                <rect key="frame" x="261" y="404" width="79" height="30"/>
+                                <state key="normal" title="Travel Back"/>
+                                <connections>
+                                    <action selector="travelBackTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I3v-nf-Ig6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Time Departed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSJ-KN-7TN">
+                                <rect key="frame" x="204" y="219" width="193" height="23"/>
+                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.64677772879999995" blue="0.030041765710000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.21925447207678883" green="0.21925447207678883" blue="0.21925447207678883" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="2eQ-Bc-diL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="15v-yM-2sJ"/>
+                            <constraint firstItem="mJj-my-Mhl" firstAttribute="top" secondItem="kZ3-1g-4as" secondAttribute="bottom" constant="36" id="1wM-fV-FZs"/>
+                            <constraint firstItem="R1s-H6-zRL" firstAttribute="top" secondItem="mJj-my-Mhl" secondAttribute="bottom" constant="22" id="73K-3I-hg6"/>
                             <constraint firstItem="iHd-Ls-dVs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Am-mo-UvS"/>
                             <constraint firstItem="2eQ-Bc-diL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9dn-7X-PKY"/>
                             <constraint firstItem="kZ3-1g-4as" firstAttribute="top" secondItem="2eQ-Bc-diL" secondAttribute="bottom" constant="8" id="9uL-74-hjb"/>
                             <constraint firstItem="2eQ-Bc-diL" firstAttribute="top" secondItem="FSJ-KN-7TN" secondAttribute="bottom" constant="20" id="AjF-46-xN6"/>
                             <constraint firstItem="XbD-AV-DZT" firstAttribute="centerX" secondItem="w4J-Kt-Puy" secondAttribute="centerX" id="BKh-tY-AM1"/>
+                            <constraint firstItem="mJj-my-Mhl" firstAttribute="centerX" secondItem="kZ3-1g-4as" secondAttribute="centerX" id="Bog-A8-x5N"/>
                             <constraint firstItem="aL9-s5-6Q7" firstAttribute="top" secondItem="w4J-Kt-Puy" secondAttribute="bottom" constant="8" id="Gwp-97-VP3"/>
                             <constraint firstItem="iHd-Ls-dVs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IMm-ay-7vf"/>
                             <constraint firstItem="iHd-Ls-dVs" firstAttribute="top" secondItem="aL9-s5-6Q7" secondAttribute="bottom" constant="20" id="IpU-ow-Vv0"/>
@@ -103,6 +120,7 @@
                             <constraint firstItem="XbD-AV-DZT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="eNe-j2-f03"/>
                             <constraint firstItem="XbD-AV-DZT" firstAttribute="top" secondItem="wwM-Fi-yj0" secondAttribute="bottom" constant="8" id="eYE-mJ-Mpu"/>
                             <constraint firstItem="XbD-AV-DZT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f7b-sH-Z5j"/>
+                            <constraint firstItem="R1s-H6-zRL" firstAttribute="centerX" secondItem="mJj-my-Mhl" secondAttribute="centerX" id="jed-Z8-pGt"/>
                             <constraint firstItem="FSJ-KN-7TN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oOD-cT-DCv"/>
                             <constraint firstItem="w4J-Kt-Puy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oc4-vS-pxp"/>
                             <constraint firstItem="w4J-Kt-Puy" firstAttribute="top" secondItem="XbD-AV-DZT" secondAttribute="bottom" constant="8" id="oi7-ua-tkv"/>
@@ -133,17 +151,16 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="PZY-0m-8JN">
-                        <barButtonItem key="rightBarButtonItem" title="Select Date" id="msI-11-rTc">
+                        <barButtonItem key="rightBarButtonItem" id="msI-11-rTc">
                             <connections>
                                 <action selector="selectDateTapped:" destination="BYZ-38-t0r" id="iSf-cT-U4l"/>
-                                <segue destination="mjS-G2-SDd" kind="presentation" identifier="dateSegue" id="NAd-Bv-9ri"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="destinationLabel" destination="XbD-AV-DZT" id="BLa-wJ-z7W"/>
-                        <outlet property="lastLabel" destination="FSJ-KN-7TN" id="Ekb-El-VjA"/>
-                        <outlet property="presentLabel" destination="aL9-s5-6Q7" id="ZNc-9v-A3L"/>
+                        <outlet property="destinationDateLabel" destination="XbD-AV-DZT" id="cnO-kc-4Br"/>
+                        <outlet property="lastDateLabel" destination="FSJ-KN-7TN" id="def-fe-lE9"/>
+                        <outlet property="presentDateLabel" destination="aL9-s5-6Q7" id="dyQ-wD-xNY"/>
                         <outlet property="speedLabel" destination="kZ3-1g-4as" id="3Qp-EW-u7L"/>
                     </connections>
                 </viewController>
@@ -175,14 +192,14 @@
                                     <color key="titleColor" red="1" green="0.066152303770000004" blue="0.024785690780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="cancelTapped:" destination="mjS-G2-SDd" eventType="touchUpInside" id="h28-CM-ceL"/>
+                                    <action selector="cancelTapped:" destination="mjS-G2-SDd" eventType="touchUpInside" id="BLT-iR-eSv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVr-tE-7Y9">
                                 <rect key="frame" x="532" y="550" width="48" height="30"/>
                                 <state key="normal" title="Enter"/>
                                 <connections>
-                                    <action selector="selectDateTapped:" destination="mjS-G2-SDd" eventType="touchUpInside" id="Kht-Wp-sDI"/>
+                                    <action selector="enterDateTapped:" destination="mjS-G2-SDd" eventType="touchUpInside" id="1Z3-3I-Jxh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -205,24 +222,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJK-1A-J5k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1647" y="316"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="jd7-0l-eN6">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VUJ-4B-kQZ" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NgR-kD-HDK">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mey-8Q-asL"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="K0y-E5-48P" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="227" y="324"/>
         </scene>
     </scenes>
 </document>

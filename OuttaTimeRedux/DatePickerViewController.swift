@@ -8,42 +8,43 @@
 
 import UIKit
 
-//weak var delegate: DateDelegate?
-
-
 class DatePickerViewController: UIViewController
 {
+    
     @IBOutlet weak var datePicker: UIDatePicker!
+    
+    var delegate: SetDestinationDelegate?
+    let dateFormat = NSDateFormatter()
 
     
-    
-//    @IBAction func selectDateTapped(sender: UIButton)
-//    {
-//        
-//    }
-//    
-//    
-//    @IBAction func cancelTapped(sender: UIButton)
-//    {
-//        self.dismissViewControllerAnimated(true, completion: nil)
-//    }
-//    
-//   
-
-    
-    
-    override func viewDidLoad() {
-                super.viewDidLoad()
-
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
 
+    //MARK: - Action Handlers
+    
+    @IBAction func enterDateTapped(sender: UIButton)
+    {
+        delegate?.didFinish(datePicker.date)
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+
+    @IBAction func cancelTapped(sender: UIButton)
+    {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 

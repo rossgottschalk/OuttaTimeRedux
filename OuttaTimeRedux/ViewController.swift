@@ -7,43 +7,26 @@
 //
 
 
-//In Objective-C:
-//
-//@protocol DetailViewControllerProtocol <NSObject>
-//- (void)didFinishTask:(DetailViewController *)sender;
-//@end
-//The Swift code is similar:
-//
-//protocol DetailViewControllerDelegate: class {
-//    func didFinishTask(sender: DetailViewController)
-//}
-
 import UIKit
 
-//protocol DateDelegate: class
-//{
-//    func dateChosen(sender: DatePickerViewController)
-//}
-
-
-class ViewController: UIViewController
+protocol SetDestinationDelegate
 {
-    @IBOutlet weak var destinationLabel: UILabel!
-    @IBOutlet weak var presentLabel: UILabel!
-    @IBOutlet weak var lastLabel: UILabel!
+    func didFinish(dateSet: NSDate)
+}
+
+
+class ViewController: UIViewController, SetDestinationDelegate
+{
+    @IBOutlet weak var destinationDateLabel: UILabel!
+    @IBOutlet weak var presentDateLabel: UILabel!
+    @IBOutlet weak var lastDateLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
 
     let dateFormat = NSDateFormatter()
+    var speedTimer = NSTimer?()
+    var currentSpeed: Int = 0
+    var startingSpeed: Int = 0
     
-    
-    
-    @IBAction func selectDateTapped(sender: UIBarButtonItem)
-    
-    {
-        self.performSegueWithIdentifier("dateSegue", sender: nil)
-    }
-    
-  
     
     override func viewDidLoad()
     {
@@ -52,25 +35,58 @@ class ViewController: UIViewController
         
        
         dateFormat.dateStyle = .MediumStyle
-        let todaysDate = NSDate ()
-        presentLabel.text = dateFormat.stringFromDate(todaysDate)
-        
-        
-        destinationLabel.text = "?????"
-        
-        
-        speedLabel.text = "61mph"
-        
+        dateFormat.timeStyle = .NoStyle
+        let todaysDate = NSDate()
+        presentDateLabel.text = dateFormat.stringFromDate(todaysDate)
+        destinationDateLabel.text = "?????"
+        //speedLabel.text = "61mph"
     }
-
-    
     override func didReceiveMemoryWarning()
-    
     {
         super.didReceiveMemoryWarning()
     }
+    
+    //MARK: - Action Handlers
+   
+    @IBAction func travelBackTapped(sender: AnyObject)
+    {
+        speedTimer = NSTimer.scheduledTimerWithTimeInterval(0.03, target: self, selector: #selector (ViewController.travelBackStarted), userInfo: nil, repeats: true)
+    }
+    
+    func travelBackStarted()
+    {
+        if (startingSpeed < 88)
+        {
+            startingSpeed = startingSpeed + 1
+            speedLabel.text = "\(startingSpeed)MPH"
+        }
+        else
+        {
+            speedTimer?.invalidate()
+            startingSpeed = 0
+            speedLabel.text = "-- MPH"
+            lastDateLabel.text = presentDateLabel.text
+            presentDateLabel.text = destinationDateLabel.text
+            destinationDateLabel.text = "Pick A New Date"
+        }
+    }
+    
+    func didFinish(dateSet: NSDate)
+    {
+        destinationDateLabel.text = dateFormat.stringFromDate(dateSet)
+    }
+    
+    
+    //MARK: - Navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        if segue.identifier == "datePickerSegue"
+        {
+            let datePickerVC = segue.destinationViewController as! DatePickerViewController
+            datePickerVC.delegate = self
+        }
+    }
 
-    
-    
 }
+
 
